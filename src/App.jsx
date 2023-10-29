@@ -7,7 +7,9 @@ export default function App() {
   return (
     <BrowserRouter>
       <Navbar/>
-      <Products/>
+      <Routes>
+        <Route path='/products' element={<Products/>}/>
+      </Routes>
       <Footer/>
     </BrowserRouter>
   )
